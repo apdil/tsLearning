@@ -1,0 +1,9 @@
+<label for="nom">Nom : </label>
+<input id='nom' type="text" [(ngModel)]='nom'>
+<label for="prenom">Prenom : </label>
+<input id='prenom' type="text" [(ngModel)]='prenom'>
+<input type="number">
+<input type="text">
+<p>{{nom}}</p>
+<p>{{prenom}}</p>
+<button (click)='consolePersone()'>personne</button>

@@ -1,0 +1,10 @@
+<h1 (click)="methode()">{{title}}</h1>
+
+<input type="text" [(ngModel)]='title' [hidden]='buttShow'>
+
+<button (click)='displayInput()' >appears </button>
+
+<input type="number" [(ngModel)]='a'> +
+<input type="number" [(ngModel)]='b'> =
+
+{{a + b}}
