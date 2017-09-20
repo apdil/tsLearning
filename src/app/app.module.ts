@@ -5,12 +5,14 @@ import { TemplateComponent } from './template/template.component';
 
 import { AppComponent } from './app.component';
 import { PersonneComponent } from './personne/personne.component';
+import { BoucleComponent } from './boucle/boucle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemplateComponent,
-    PersonneComponent
+    PersonneComponent,
+    BoucleComponent
   ],
   imports: [
     BrowserModule,
