@@ -1,0 +1,12 @@
+
+<input [(ngModel)]='post.title' type="text" placeholder='title'>
+<input [(ngModel)]='post.content' type="text" placeholder='content'>
+<button (click)='display()'>submit</button>
+
+<div *ngFor='let pst of posts; index as key'>
+    <div>
+        <h2>{{pst.title}}</h2>
+        <p>{{pst.content}}</p>
+        <button (click)='removePost()'>Remove</button>
+    <div>
+</div>

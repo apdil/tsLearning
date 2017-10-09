@@ -6,17 +6,22 @@ import { TemplateComponent } from './template/template.component';
 import { AppComponent } from './app.component';
 import { PersonneComponent } from './personne/personne.component';
 import { BoucleComponent } from './boucle/boucle.component';
+import { TodolistComponent } from './todo-list/todo-list.component';
+import { RouterModule } from '@angular/router';
+import { appRoutes } from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemplateComponent,
     PersonneComponent,
-    BoucleComponent
+    BoucleComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
